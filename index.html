@@ -1,1 +1,20 @@
-hello pulyka
+<label for="number-input">Choose a number:</label>
+<input type="number" id="number-input" min="1" max="30" step="1">
+
+<hr>
+
+<label for="number-range">Choose a number:</label>
+<input type="range" id="number-range" min="1" max="30" step="1" oninput="this.nextElementSibling.value = this.value">
+<output>15</output> <!-- Default value display -->
+
+<hr>
+
+<label for="number-select">Choose a number:</label>
+<br/>
+<select id="number-select">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <!-- Add options up to 30 -->
+  <option value="30">30</option>
+</select>
